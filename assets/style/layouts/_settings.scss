@@ -4,8 +4,12 @@
 }
 
 $font1: Roboto, sans-serif;
+$white-1: white;
 $black-1: black;
+$black-2: rgb(56, 56, 56);
 $grey-1: #696969;
+$light-grey: #cfcfcf83;
+$blue-1: blue;
 
 * {
   padding: 0;
@@ -39,7 +43,7 @@ button {
     &:after {
       content: "";
       position: absolute;
-      background: black;
+      background: $black-1;
       width: 4px;
       height: 130%;
       top: -12%;
