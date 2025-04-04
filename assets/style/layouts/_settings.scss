@@ -8,8 +8,10 @@ $white-1: white;
 $black-1: black;
 $black-2: rgb(56, 56, 56);
 $grey-1: #696969;
-$light-grey: #cfcfcf83;
-$blue-1: blue;
+$light-grey-1: #cfcfcf83;
+$light-grey-2: #aaaaaaea;
+$light-grey-3: #c2c2c2ea;
+$blue-1: rgb(0, 0, 156);
 
 * {
   padding: 0;
@@ -19,23 +21,37 @@ $blue-1: blue;
 
 body {
   font-family: $font1;
+  color: $black-2;
+  font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
 }
 
 li {
   list-style-type: none;
+  cursor: pointer;
 }
 
 button {
   border: none;
+  cursor: pointer;
 }
 
-.logo {
+.logo-black {
   display: flex;
   font-size: 1.3rem;
   letter-spacing: 5px;
-  font-weight: lighter;
+  font-weight: bold;
   height: 50px;
   align-items: center;
+  color: $black-2;
   .hr {
     display: flex;
     position: relative;
@@ -43,7 +59,44 @@ button {
     &:after {
       content: "";
       position: absolute;
-      background: $black-1;
+      background: $black-2;
+      width: 4px;
+      height: 130%;
+      top: -12%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    h1:first-child {
+      padding-right: 5px;
+    }
+
+    h1:last-child {
+      padding-left: 5px;
+    }
+  }
+
+  .art {
+    margin-left: 10px;
+  }
+}
+
+.logo-white {
+  display: flex;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  height: 50px;
+  align-items: center;
+  color: $white-1;
+  .hr {
+    display: flex;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: $white-1;
       width: 4px;
       height: 130%;
       top: -12%;
