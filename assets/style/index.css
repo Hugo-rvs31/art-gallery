@@ -549,6 +549,21 @@ header {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 750px) {
+  header {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 390px) {
+  header {
+    height: 400px;
+  }
+}
 header .center {
   display: flex;
   flex-direction: column;
@@ -560,6 +575,19 @@ header .center h1 {
   text-transform: uppercase;
   font-weight: lighter;
 }
+@media screen and (max-width: 750px) {
+  header .center h1 {
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .center h1 {
+    font-size: 1.6rem;
+    line-height: 40px;
+  }
+}
 header .center button {
   width: 150px;
   background: white;
@@ -569,6 +597,12 @@ header .center button {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 20px;
+}
+@media screen and (max-width: 500px) {
+  header .center button {
+    height: 40px;
+    font-size: 0.9rem;
+  }
 }
 header .center button:hover {
   background: black;
@@ -597,6 +631,12 @@ header .center button:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 900px) {
+  .section-1 .title h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 .section-1 .title p {
   font-weight: lighter;
   font-size: 0.9rem;
@@ -605,11 +645,24 @@ header .center button:hover {
   letter-spacing: 0.5px;
   color: #696969;
 }
+@media screen and (max-width: 900px) {
+  .section-1 .title p {
+    margin: 30px 0;
+    text-align: center;
+  }
+}
 .section-1 .inputs {
   display: grid;
   justify-content: space-between;
   grid-template-columns: 24% 24% 24% 24%;
   margin-top: 45px;
+}
+@media screen and (max-width: 760px) {
+  .section-1 .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .section-1 .inputs .each-input {
   width: 100%;
@@ -710,6 +763,11 @@ header .center button:hover {
   margin-right: 5px;
   cursor: pointer;
 }
+@media screen and (max-width: 760px) {
+  .section-1 .buttons button {
+    height: 60px;
+  }
+}
 .section-1 .buttons button:hover {
   background: black;
   color: white;
@@ -720,6 +778,18 @@ header .center button:hover {
   width: 90%;
   margin-top: 75px;
 }
+@media screen and (max-width: 1000px) {
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 670px) {
+  .section-2 {
+    width: 97%;
+  }
+}
 .section-2 .text {
   text-align: center;
   display: flex;
@@ -727,11 +797,22 @@ header .center button:hover {
   justify-content: space-between;
   width: 100%;
 }
+@media screen and (max-width: 1000px) {
+  .section-2 .text {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
 .section-2 .text h2 {
   letter-spacing: 1px;
   font-weight: lighter;
   font-size: 2rem;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .section-2 .text h2 {
+    text-align: center;
+  }
 }
 .section-2 .text p {
   text-decoration: underline;
@@ -739,15 +820,52 @@ header .center button:hover {
   font-weight: lighter;
   cursor: pointer;
 }
+@media screen and (max-width: 1000px) {
+  .section-2 .text p {
+    display: none;
+  }
+}
 .section-2 .container {
   display: grid;
   grid-template-columns: 18% 18% 18% 18% 18%;
   justify-content: space-between;
 }
+@media screen and (max-width: 1000px) {
+  .section-2 .container {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 .section-2 .container .each-div {
   height: 500px;
   position: relative;
   border: 1px solid rgba(207, 207, 207, 0.5137254902);
+}
+@media screen and (max-width: 1200px) {
+  .section-2 .container .each-div {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section-2 .container .each-div {
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .section-2 .container .each-div {
+    margin-right: 0;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .section-2 .container .each-div {
+    width: 80%;
+  }
 }
 .section-2 .container .each-div:hover .circle {
   visibility: visible;
@@ -761,6 +879,11 @@ header .center button:hover {
   cursor: pointer;
   border-radius: 300px;
   visibility: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .section-2 .container .each-div .circle {
+    bottom: 145px;
+  }
 }
 .section-2 .container .each-div .circle:hover {
   background: rgba(170, 170, 170, 0.9176470588);
@@ -777,6 +900,11 @@ header .center button:hover {
   height: 65%;
   cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+  .section-2 .container .each-div .div-img {
+    height: 60%;
+  }
+}
 .section-2 .container .each-div .div-img img {
   width: 100%;
   height: 100%;
@@ -791,6 +919,16 @@ header .center button:hover {
   margin-top: 50px;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 1200px) {
+  .section-2 .container .each-div h4 {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section-2 .container .each-div h4 {
+    margin-top: 40px;
+  }
+}
 .section-2 .container .each-div h3 {
   cursor: pointer;
   text-transform: uppercase;
@@ -799,17 +937,48 @@ header .center button:hover {
   padding-left: 8px;
   margin: 6px 0;
 }
+@media screen and (max-width: 1000px) {
+  .section-2 .container .each-div h3 {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+}
 .section-2 .container .each-div p {
   font-size: 0.8rem;
   color: rgba(194, 194, 194, 0.9176470588);
   font-weight: lighter;
   padding-left: 8px;
 }
+.section-2 .new-p {
+  text-decoration: underline;
+  color: rgba(170, 170, 170, 0.9176470588);
+  font-weight: lighter;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .section-2 .new-p {
+    display: flex;
+  }
+}
 
 .section-3 {
   margin: 0 auto;
   width: 90%;
   margin-top: 75px;
+}
+@media screen and (max-width: 1000px) {
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 670px) {
+  .section-3 {
+    width: 97%;
+  }
 }
 .section-3 .text {
   text-align: center;
@@ -818,11 +987,22 @@ header .center button:hover {
   justify-content: space-between;
   width: 100%;
 }
+@media screen and (max-width: 1000px) {
+  .section-3 .text {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
 .section-3 .text h2 {
   letter-spacing: 1px;
   font-weight: lighter;
   font-size: 2rem;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .section-3 .text h2 {
+    text-align: center;
+  }
 }
 .section-3 .text p {
   text-decoration: underline;
@@ -830,15 +1010,52 @@ header .center button:hover {
   font-weight: lighter;
   cursor: pointer;
 }
+@media screen and (max-width: 1000px) {
+  .section-3 .text p {
+    display: none;
+  }
+}
 .section-3 .container {
   display: grid;
   grid-template-columns: 18% 18% 18% 18% 18%;
   justify-content: space-between;
 }
+@media screen and (max-width: 1000px) {
+  .section-3 .container {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 .section-3 .container .each-div {
   height: 500px;
   position: relative;
   border: 1px solid rgba(207, 207, 207, 0.5137254902);
+}
+@media screen and (max-width: 1200px) {
+  .section-3 .container .each-div {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section-3 .container .each-div {
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .section-3 .container .each-div {
+    margin-right: 0;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .section-3 .container .each-div {
+    width: 80%;
+  }
 }
 .section-3 .container .each-div:hover .circle {
   visibility: visible;
@@ -853,6 +1070,17 @@ header .center button:hover {
   border-radius: 300px;
   visibility: hidden;
 }
+@media screen and (max-width: 1200px) {
+  .section-3 .container .each-div .circle {
+    bottom: 145px;
+  }
+}
+.section-3 .container .each-div .circle:hover {
+  background: rgba(170, 170, 170, 0.9176470588);
+}
+.section-3 .container .each-div .circle:hover i {
+  color: rgb(0, 0, 156);
+}
 .section-3 .container .each-div .circle i {
   padding: 8px;
   font-size: 1.4rem;
@@ -861,6 +1089,11 @@ header .center button:hover {
   width: 100%;
   height: 65%;
   cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .section-3 .container .each-div .div-img {
+    height: 60%;
+  }
 }
 .section-3 .container .each-div .div-img img {
   width: 100%;
@@ -876,6 +1109,16 @@ header .center button:hover {
   margin-top: 50px;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 1200px) {
+  .section-3 .container .each-div h4 {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section-3 .container .each-div h4 {
+    margin-top: 40px;
+  }
+}
 .section-3 .container .each-div h3 {
   cursor: pointer;
   text-transform: uppercase;
@@ -884,11 +1127,30 @@ header .center button:hover {
   padding-left: 8px;
   margin: 6px 0;
 }
+@media screen and (max-width: 1000px) {
+  .section-3 .container .each-div h3 {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+}
 .section-3 .container .each-div p {
   font-size: 0.8rem;
   color: rgba(194, 194, 194, 0.9176470588);
   font-weight: lighter;
   padding-left: 8px;
+}
+.section-3 .new-p {
+  text-decoration: underline;
+  color: rgba(170, 170, 170, 0.9176470588);
+  font-weight: lighter;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .section-3 .new-p {
+    display: flex;
+  }
 }
 
 .section-4 {
@@ -899,6 +1161,24 @@ header .center button:hover {
   grid-template-columns: 40% 40%;
   height: 500px;
   justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .section-4 {
+    height: 400px;
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 656px) {
+  .section-4 {
+    height: 650px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-4 {
+    height: 800px;
+  }
 }
 .section-4 .div-left {
   display: flex;
@@ -911,11 +1191,27 @@ header .center button:hover {
   gap: 20px;
   padding-right: 50px;
 }
+@media screen and (max-width: 1000px) {
+  .section-4 .div-left .text-left {
+    padding-right: 10px;
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 656px) {
+  .section-4 .div-left .text-left {
+    align-items: center;
+  }
+}
 .section-4 .div-left .text-left h4 {
   font-size: 1.4rem;
   font-weight: lighter;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 656px) {
+  .section-4 .div-left .text-left h4 {
+    text-align: center;
+  }
 }
 .section-4 .div-left .text-left h1 {
   font-size: 2.1rem;
@@ -923,8 +1219,18 @@ header .center button:hover {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 656px) {
+  .section-4 .div-left .text-left h1 {
+    text-align: center;
+  }
+}
 .section-4 .div-left .text-left p {
   font-weight: lighter;
+}
+@media screen and (max-width: 656px) {
+  .section-4 .div-left .text-left p {
+    text-align: center;
+  }
 }
 .section-4 .div-left .text-left button {
   border: 2px solid white;
@@ -944,6 +1250,11 @@ header .center button:hover {
   background: url(/assets/img/GettyImages-148277946.webp) center/cover;
   height: 100%;
   position: relative;
+}
+@media screen and (max-width: 656px) {
+  .section-4 .div-right .div-img {
+    background: url(/assets/img/GettyImages-148277946.webp) center/contain;
+  }
 }
 .section-4 .div-right .div-img .text {
   position: absolute;

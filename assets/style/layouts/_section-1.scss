@@ -18,6 +18,11 @@
       color: $black-2;
       text-transform: uppercase;
       letter-spacing: 2px;
+
+      @media screen and (max-width: 900px) {
+        font-size: 2rem;
+        text-align: center;
+      }
     }
 
     p {
@@ -27,6 +32,11 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
       color: $grey-1;
+
+      @media screen and (max-width: 900px) {
+        margin: 30px 0;
+        text-align: center;
+      }
     }
   }
 
@@ -35,6 +45,12 @@
     justify-content: space-between;
     grid-template-columns: 24% 24% 24% 24%;
     margin-top: 45px;
+
+    @media screen and (max-width: 760px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
     .each-input {
       width: 100%;
       height: 42px;
@@ -150,6 +166,10 @@
       margin-left: 5px;
       margin-right: 5px;
       cursor: pointer;
+
+      @media screen and (max-width: 760px) {
+        height: 60px;
+      }
 
       &:hover {
         background: $black-1;
