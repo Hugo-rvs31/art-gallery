@@ -1,0 +1,54 @@
+.section-10 {
+  background: $light-grey-1;
+  height: 500px;
+
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    max-width: 1500px;
+
+    @media screen and (min-width: 1500px) {
+      margin: 0 auto;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 150px;
+      gap: 20px;
+
+      h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      p {
+        line-height: 23px;
+        letter-spacing: 0.5px;
+      }
+
+      button {
+        width: 195px;
+        height: 40px;
+        text-transform: uppercase;
+        background: transparent;
+        border: 2px $black-2 solid;
+        letter-spacing: 1px;
+
+        &:hover {
+          background: $blue-1;
+          color: $white-1;
+        }
+      }
+    }
+
+    .right {
+      background: url(/assets/img/720xAUTO_original_file_2025_02_8c6bb6b7-c3f4-400c-b26e-ea78141ab176.webp)
+        center/cover;
+      height: 100%;
+    }
+  }
+}

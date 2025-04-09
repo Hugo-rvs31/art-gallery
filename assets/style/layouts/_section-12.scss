@@ -1,0 +1,25 @@
+.section-12 {
+  height: 250px;
+  padding: 70px 0;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .container {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      object-fit: contain;
+      cursor: pointer;
+    }
+  }
+}
