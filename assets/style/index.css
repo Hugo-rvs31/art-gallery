@@ -1282,6 +1282,14 @@ header .center button:hover {
   width: 85%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1200px) {
+  .section-5 {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .section-5 .text-up {
   display: flex;
   align-items: center;
@@ -1292,6 +1300,23 @@ header .center button:hover {
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1200px) {
+  .section-5 .text-up .text-left h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section-5 .text-up .text-left p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section-5 .text-up .text-right {
+    display: none;
+  }
 }
 .section-5 .text-up .text-right p {
   cursor: pointer;
@@ -1307,6 +1332,32 @@ header .center button:hover {
   display: grid;
   grid-template-columns: 30% 70%;
 }
+@media screen and (max-width: 1200px) {
+  .section-5 .container .each-div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 75%;
+    text-align: center;
+    height: 320px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 977px) {
+  .section-5 .container .each-div {
+    height: 530px;
+  }
+}
+@media screen and (max-width: 593px) {
+  .section-5 .container .each-div {
+    height: 590px;
+    grid-template-rows: 15% 85%;
+  }
+}
+@media screen and (max-width: 396px) {
+  .section-5 .container .each-div {
+    height: 1250px;
+    grid-template-rows: 8% 92%;
+  }
+}
 .section-5 .container .each-div .text-part {
   display: flex;
   flex-direction: column;
@@ -1319,6 +1370,11 @@ header .center button:hover {
   text-transform: uppercase;
   cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+  .section-5 .container .each-div .text-part h2 {
+    font-size: 1.7rem;
+  }
+}
 .section-5 .container .each-div .text-part p {
   color: #696969;
   font-weight: lighter;
@@ -1326,10 +1382,63 @@ header .center button:hover {
 .section-5 .container .each-div .container-img {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .section-5 .container .each-div .container-img {
+    display: block;
+    text-align: center;
+  }
 }
 .section-5 .container .each-div .container-img img {
-  width: 148px;
+  width: 100%;
   cursor: pointer;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 1200px) {
+  .section-5 .container .each-div .container-img img {
+    display: inline-block;
+    text-align: center;
+    height: 160px;
+    width: 160px;
+    margin: 10px 10px;
+    border: 1px solid rgba(170, 170, 170, 0.9176470588);
+  }
+}
+@media screen and (max-width: 396px) {
+  .section-5 .container .each-div .container-img img {
+    width: 90%;
+    height: 200px;
+    background: rgba(255, 56, 0, 0.15);
+    padding: 40px 0;
+  }
+}
+.section-5 .new-p {
+  display: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgba(170, 170, 170, 0.9176470588);
+}
+@media screen and (max-width: 1200px) {
+  .section-5 .new-p {
+    display: flex;
+  }
+}
+@media screen and (max-width: 977px) {
+  .section-5 .new-p {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 593px) {
+  .section-5 .new-p {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 396px) {
+  .section-5 .new-p {
+    padding: 0;
+  }
 }
 
 .section-6 {
@@ -1351,6 +1460,17 @@ header .center button:hover {
   width: 85%;
   height: 450px;
 }
+@media screen and (max-width: 1130px) {
+  .section-6 .big-container {
+    height: 850px;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 629px) {
+  .section-6 .big-container {
+    height: 1720px;
+  }
+}
 .section-6 .big-container .container {
   display: grid;
   height: 100%;
@@ -1358,11 +1478,26 @@ header .center button:hover {
   justify-content: space-between;
   position: absolute;
 }
+@media screen and (max-width: 1130px) {
+  .section-6 .big-container .container {
+    display: block;
+    text-align: center;
+  }
+}
 .section-6 .big-container .container .each-div {
   height: 100%;
   display: grid;
   grid-template-rows: 60% 40%;
   background: white;
+}
+@media screen and (max-width: 1130px) {
+  .section-6 .big-container .container .each-div {
+    display: inline-block;
+    text-align: center;
+    height: 400px;
+    width: 270px;
+    margin: 12px 10px;
+  }
 }
 .section-6 .big-container .container .each-div .div-img img {
   -o-object-fit: cover;
@@ -1377,11 +1512,21 @@ header .center button:hover {
   justify-content: space-evenly;
   padding: 0 10px;
 }
+@media screen and (max-width: 1130px) {
+  .section-6 .big-container .container .each-div .text {
+    gap: 17px;
+  }
+}
 .section-6 .big-container .container .each-div .text h5 {
   font-size: 1.1rem;
   color: rgba(170, 170, 170, 0.9176470588);
   text-transform: uppercase;
   cursor: pointer;
+}
+@media screen and (max-width: 1130px) {
+  .section-6 .big-container .container .each-div .text h5 {
+    margin-top: 10px;
+  }
 }
 .section-6 .big-container .container .each-div .text h3 {
   font-size: 1.4rem;
@@ -1452,9 +1597,47 @@ header .center button:hover {
   grid-template-columns: 45% 55%;
   height: 510px;
 }
+@media screen and (max-width: 1355px) {
+  .section-7 .container {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 1145px) {
+  .section-7 .container {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .section-7 .container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 850px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-7 .container {
+    height: 1200px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .section-7 .container {
+    height: 1350px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-7 .container {
+    width: 100%;
+  }
+}
 .section-7 .container .left {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 970px) {
+  .section-7 .container .left {
+    height: 60%;
+    margin-top: 100px;
+  }
 }
 .section-7 .container .left .inner-left {
   display: flex;
@@ -1462,20 +1645,40 @@ header .center button:hover {
   padding: 30px 50px;
   gap: 20px;
 }
+@media screen and (max-width: 970px) {
+  .section-7 .container .left .inner-left {
+    align-items: center;
+  }
+}
 .section-7 .container .left .inner-left h3 {
   letter-spacing: 1px;
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 560px) {
+  .section-7 .container .left .inner-left h3 {
+    text-align: center;
+  }
 }
 .section-7 .container .left .inner-left h1 {
   letter-spacing: 2px;
   font-size: 2rem;
   text-transform: uppercase;
 }
+@media screen and (max-width: 560px) {
+  .section-7 .container .left .inner-left h1 {
+    text-align: center;
+  }
+}
 .section-7 .container .left .inner-left p {
   color: rgba(170, 170, 170, 0.9176470588);
   line-height: 25px;
   font-weight: lighter;
+}
+@media screen and (max-width: 560px) {
+  .section-7 .container .left .inner-left p {
+    text-align: center;
+  }
 }
 .section-7 .container .left .inner-left #button-1 {
   width: 195px;
@@ -1485,12 +1688,22 @@ header .center button:hover {
   border: 2px rgb(56, 56, 56) solid;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 970px) {
+  .section-7 .container .left .inner-left #button-1 {
+    margin-top: 40px;
+  }
+}
 .section-7 .container .left .inner-left #button-1:hover {
   background: rgb(0, 0, 156);
   color: white;
 }
 .section-7 .container .left .inner-left h4 {
   text-transform: uppercase;
+}
+@media screen and (max-width: 970px) {
+  .section-7 .container .left .inner-left .buttons {
+    text-align: center;
+  }
 }
 .section-7 .container .left .inner-left .buttons button {
   height: 42px;
@@ -1513,12 +1726,23 @@ header .center button:hover {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 970px) {
+  .section-7 .container .right {
+    height: 40%;
+  }
+}
 .section-7 .container .right .text-image {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 970px) {
+  .section-7 .container .right .text-image {
+    justify-content: center;
+    margin-bottom: 0;
+  }
 }
 .section-7 .container .right .text-image h1 {
   color: white;
@@ -1532,7 +1756,7 @@ header .center button:hover {
 }
 
 .section-8 {
-  margin-top: 100px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1542,14 +1766,45 @@ header .center button:hover {
   font-size: 2rem;
   letter-spacing: 4px;
 }
+@media screen and (max-width: 1130px) {
+  .section-8 h1 {
+    text-align: center;
+  }
+}
 .section-8 p {
   margin: 17px 0;
+}
+@media screen and (max-width: 1130px) {
+  .section-8 p {
+    text-align: center;
+  }
 }
 .section-8 .container {
   width: 90%;
   max-width: 1400px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1130px) {
+  .section-8 .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-8 .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 580px) {
+  .section-8 .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 415px) {
+  .section-8 .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 .section-8 .container .each-div {
   position: relative;
@@ -1598,34 +1853,30 @@ header .center button:hover {
   width: 98%;
   display: grid;
   grid-template-columns: 16% 84%;
-  margin: 150px auto;
-  height: 230px;
-  max-width: 1550px;
+  max-width: 1400px;
+  height: 400px;
+  align-items: center;
+  margin: 0 auto;
 }
-@media screen and (max-width: 1532px) {
+@media screen and (max-width: 1356px) {
   .section-9 {
-    display: block;
-    margin-top: 100px;
-    height: 300px;
+    margin: 40px auto;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1356px) {
   .section-9 {
-    height: 360px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    height: 500px;
   }
 }
 .section-9 .left {
-  margin-top: 40px;
+  padding-top: -30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 7px;
-}
-@media screen and (max-width: 1532px) {
-  .section-9 .left {
-    margin-top: 0;
-    margin-bottom: 50px;
-  }
 }
 .section-9 .left h2 {
   font-size: 1.8rem;
@@ -1644,10 +1895,16 @@ header .center button:hover {
   display: grid;
   grid-template-columns: 5% 90% 5%;
   align-items: center;
+  height: 70%;
 }
-@media screen and (max-width: 1532px) {
+@media screen and (max-width: 510px) {
   .section-9 .container {
-    height: 100%;
+    grid-template-columns: 15% 70% 15%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .section-9 .container {
+    grid-template-columns: 10% 80% 10%;
   }
 }
 .section-9 .container .button-angle i {
@@ -1663,11 +1920,48 @@ header .center button:hover {
   display: flex;
   flex-direction: row-reverse;
 }
+@media screen and (max-width: 1532px) {
+  .section-9 .container .button-angle-right {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 1532px) {
+  .section-9 .container .button-angle-left {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 790px) {
+  .section-9 .container .button-angle-left {
+    padding-left: -10px;
+  }
+}
 .section-9 .container .center {
   height: 100%;
   display: grid;
   grid-template-columns: 24% 24% 24% 24%;
   justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1218px) {
+  .section-9 .container .center {
+    grid-template-columns: 32.5% 32.5% 32.5%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .section-9 .container .center {
+    grid-template-columns: 47% 47%;
+  }
+}
+@media screen and (max-width: 790px) {
+  .section-9 .container .center {
+    grid-template-columns: 49% 49%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .section-9 .container .center {
+    grid-template-columns: 100%;
+  }
 }
 .section-9 .container .center .each-div {
   height: 100%;
@@ -1697,10 +1991,35 @@ header .center button:hover {
   color: rgba(170, 170, 170, 0.9176470588);
   padding-right: 17px;
 }
+@media screen and (max-width: 1218px) {
+  .section-9 .container .center .each-div:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 830px) {
+  .section-9 .container .center .each-div:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 790px) {
+  .section-9 .container .center .each-div:first-child {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .section-9 .container .center .each-div:nth-child(2) {
+    display: none;
+  }
+}
 
 .section-10 {
   background: rgba(207, 207, 207, 0.5137254902);
   height: 500px;
+}
+@media screen and (max-width: 1050px) {
+  .section-10 {
+    height: 750px;
+  }
 }
 .section-10 .container {
   display: grid;
@@ -1713,6 +2032,12 @@ header .center button:hover {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 1050px) {
+  .section-10 .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .section-10 .container .left {
   display: flex;
   flex-direction: column;
@@ -1720,14 +2045,45 @@ header .center button:hover {
   padding: 0 150px;
   gap: 20px;
 }
+@media screen and (max-width: 1050px) {
+  .section-10 .container .left {
+    height: 60%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 665px) {
+  .section-10 .container .left {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-10 .container .left {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .section-10 .container .left {
+    padding: 0 10px;
+  }
+}
 .section-10 .container .left h1 {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+@media screen and (max-width: 1050px) {
+  .section-10 .container .left h1 {
+    text-align: center;
+  }
+}
 .section-10 .container .left p {
   line-height: 23px;
   letter-spacing: 0.5px;
+}
+@media screen and (max-width: 1050px) {
+  .section-10 .container .left p {
+    text-align: center;
+  }
 }
 .section-10 .container .left button {
   width: 195px;
@@ -1744,6 +2100,18 @@ header .center button:hover {
 .section-10 .container .right {
   background: url(/assets/img/720xAUTO_original_file_2025_02_8c6bb6b7-c3f4-400c-b26e-ea78141ab176.webp) center/cover;
   height: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .section-10 .container .right {
+    height: 40%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .section-10 .container .right {
+    width: 90%;
+    height: 30%;
+    margin: 0 auto;
+  }
 }
 
 .section-11 {

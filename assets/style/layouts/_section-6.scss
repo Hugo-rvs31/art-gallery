@@ -17,6 +17,15 @@
     position: relative;
     width: 85%;
     height: 450px;
+
+    @media screen and (max-width: 1130px) {
+      height: 850px;
+      width: 95%;
+    }
+
+    @media screen and (max-width: 629px) {
+      height: 1720px;
+    }
     .container {
       display: grid;
       height: 100%;
@@ -24,11 +33,24 @@
       justify-content: space-between;
       position: absolute;
 
+      @media screen and (max-width: 1130px) {
+        display: block;
+        text-align: center;
+      }
+
       .each-div {
         height: 100%;
         display: grid;
         grid-template-rows: 60% 40%;
         background: $white-1;
+
+        @media screen and (max-width: 1130px) {
+          display: inline-block;
+          text-align: center;
+          height: 400px;
+          width: 270px;
+          margin: 12px 10px;
+        }
         .div-img {
           img {
             object-fit: cover;
@@ -43,11 +65,19 @@
           flex-direction: column;
           justify-content: space-evenly;
           padding: 0 10px;
+
+          @media screen and (max-width: 1130px) {
+            gap: 17px;
+          }
           h5 {
             font-size: 1.1rem;
             color: $light-grey-2;
             text-transform: uppercase;
             cursor: pointer;
+
+            @media screen and (max-width: 1130px) {
+              margin-top: 10px;
+            }
           }
 
           h3 {

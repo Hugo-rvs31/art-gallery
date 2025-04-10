@@ -7,30 +7,78 @@
     display: grid;
     grid-template-columns: 45% 55%;
     height: 510px;
+
+    @media screen and (max-width: 1355px) {
+      height: 600px;
+    }
+
+    @media screen and (max-width: 1145px) {
+      height: 700px;
+    }
+
+    @media screen and (max-width: 970px) {
+      display: flex;
+      flex-direction: column-reverse;
+
+      height: 850px;
+    }
+
+    @media screen and (max-width: 500px) {
+      height: 1200px;
+    }
+
+    @media screen and (max-width: 445px) {
+      height: 1350px;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 100%;
+    }
     .left {
       display: flex;
       align-items: center;
+
+      @media screen and (max-width: 970px) {
+        height: 60%;
+        margin-top: 100px;
+      }
       .inner-left {
         display: flex;
         flex-direction: column;
         padding: 30px 50px;
         gap: 20px;
+
+        @media screen and (max-width: 970px) {
+          align-items: center;
+        }
         h3 {
           letter-spacing: 1px;
           font-size: 1.5rem;
           text-transform: uppercase;
+
+          @media screen and (max-width: 560px) {
+            text-align: center;
+          }
         }
 
         h1 {
           letter-spacing: 2px;
           font-size: 2rem;
           text-transform: uppercase;
+
+          @media screen and (max-width: 560px) {
+            text-align: center;
+          }
         }
 
         p {
           color: $light-grey-2;
           line-height: 25px;
           font-weight: lighter;
+
+          @media screen and (max-width: 560px) {
+            text-align: center;
+          }
         }
 
         #button-1 {
@@ -40,6 +88,10 @@
           background: transparent;
           border: 2px $black-2 solid;
           letter-spacing: 1px;
+
+          @media screen and (max-width: 970px) {
+            margin-top: 40px;
+          }
 
           &:hover {
             background: $blue-1;
@@ -52,6 +104,9 @@
         }
 
         .buttons {
+          @media screen and (max-width: 970px) {
+            text-align: center;
+          }
           button {
             height: 42px;
             color: $grey-1;
@@ -77,12 +132,21 @@
       background: url(/assets/img/pexels-tahaasamett-10540802.jpg) center/cover;
       display: flex;
       justify-content: center;
+
+      @media screen and (max-width: 970px) {
+        height: 40%;
+      }
       .text-image {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 970px) {
+          justify-content: center;
+          margin-bottom: 0;
+        }
         h1 {
           color: $white-1;
           letter-spacing: 7px;
