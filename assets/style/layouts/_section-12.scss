@@ -3,6 +3,18 @@
   padding: 70px 0;
   max-width: 1500px;
   margin: 0 auto;
+  @media screen and (max-width: 1282px) {
+    height: 350px;
+  }
+  @media screen and (max-width: 680px) {
+    height: 450px;
+  }
+  @media screen and (max-width: 455px) {
+    height: 550px;
+  }
+  @media screen and (max-width: 380px) {
+    height: 750px;
+  }
 
   h1 {
     text-align: center;
@@ -16,10 +28,19 @@
     gap: 40px;
     justify-content: center;
     text-align: center;
+    @media screen and (max-width: 1282px) {
+      text-align: center;
+      display: block;
+    }
 
     img {
       object-fit: contain;
       cursor: pointer;
+      @media screen and (max-width: 1282px) {
+        text-align: center;
+        display: inline-block;
+        margin: 20px 20px;
+      }
     }
   }
 }

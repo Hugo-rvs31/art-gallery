@@ -1771,6 +1771,13 @@ header .center button:hover {
     text-align: center;
   }
 }
+@media screen and (max-width: 370px) {
+  .section-8 h1 {
+    padding: 0 8px;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+  }
+}
 .section-8 p {
   margin: 17px 0;
 }
@@ -2137,6 +2144,11 @@ header .center button:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 646px) {
+  .section-11 .container .up p {
+    text-align: center;
+  }
+}
 .section-11 .container .up p i {
   text-decoration: underline;
   font-style: normal;
@@ -2151,11 +2163,43 @@ header .center button:hover {
   justify-content: space-between;
   margin-top: 40px;
 }
+@media screen and (max-width: 646px) {
+  .section-11 .container .down {
+    text-align: center;
+    display: block;
+  }
+}
 .section-11 .container .down .each-div {
   height: 280px;
   display: grid;
   grid-template-rows: 40% 15% 35% 10%;
+  gap: 10px;
   justify-items: center;
+}
+@media screen and (max-width: 1230px) {
+  .section-11 .container .down .each-div {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 646px) {
+  .section-11 .container .down .each-div {
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    padding: 0 50px;
+    height: 200px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .section-11 .container .down .each-div {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .section-11 .container .down .each-div {
+    margin-bottom: 120px;
+  }
 }
 .section-11 .container .down .each-div .icon {
   display: flex;
@@ -2176,11 +2220,21 @@ header .center button:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+@media screen and (max-width: 646px) {
+  .section-11 .container .down .each-div h5 {
+    margin: 15px 0;
+  }
+}
 .section-11 .container .down .each-div h3 {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-align: center;
+}
+@media screen and (max-width: 646px) {
+  .section-11 .container .down .each-div h3 {
+    margin: 15px 0;
+  }
 }
 
 .section-12 {
@@ -2188,6 +2242,26 @@ header .center button:hover {
   padding: 70px 0;
   max-width: 1500px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1282px) {
+  .section-12 {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .section-12 {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .section-12 {
+    height: 550px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .section-12 {
+    height: 750px;
+  }
 }
 .section-12 h1 {
   text-align: center;
@@ -2201,10 +2275,23 @@ header .center button:hover {
   justify-content: center;
   text-align: center;
 }
+@media screen and (max-width: 1282px) {
+  .section-12 .container {
+    text-align: center;
+    display: block;
+  }
+}
 .section-12 .container img {
   -o-object-fit: contain;
      object-fit: contain;
   cursor: pointer;
+}
+@media screen and (max-width: 1282px) {
+  .section-12 .container img {
+    text-align: center;
+    display: inline-block;
+    margin: 20px 20px;
+  }
 }
 
 footer {
@@ -2212,9 +2299,29 @@ footer {
   background: rgba(207, 207, 207, 0.5137254902);
   padding: 40px 0;
 }
+@media screen and (max-width: 890px) {
+  footer {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 515px) {
+  footer {
+    height: 1100px;
+  }
+}
+@media screen and (max-width: 420px) {
+  footer {
+    height: 1400px;
+  }
+}
 footer .container {
   max-width: 1000px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1040px) {
+  footer .container {
+    padding: 0 20px;
+  }
 }
 footer .container h1 {
   text-transform: uppercase;
@@ -2222,14 +2329,32 @@ footer .container h1 {
   letter-spacing: 4px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 890px) {
+  footer .container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.7rem;
+  }
+}
 footer .container .form {
   display: flex;
   gap: 30px;
   align-items: center;
 }
+@media screen and (max-width: 890px) {
+  footer .container .form {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+}
 footer .container .form .left {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 890px) {
+  footer .container .form .left {
+    margin-bottom: 20px;
+  }
 }
 footer .container .form .left input {
   border-bottom: 1.8px solid rgb(56, 56, 56);
@@ -2243,6 +2368,16 @@ footer .container .form .left input {
   color: rgba(170, 170, 170, 0.9176470588);
   width: 710px;
 }
+@media screen and (max-width: 1040px) {
+  footer .container .form .left input {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 645px) {
+  footer .container .form .left input {
+    width: 100%;
+  }
+}
 footer .container .form .left input:hover {
   border-bottom: 1.8px solid rgb(0, 0, 156);
 }
@@ -2252,6 +2387,23 @@ footer .container .form .left p {
   line-height: 22px;
   padding-right: 40px;
   letter-spacing: 0.5px;
+}
+@media screen and (max-width: 1040px) {
+  footer .container .form .left p {
+    width: 610px;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 645px) {
+  footer .container .form .left p {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 345px) {
+  footer .container .form .left p {
+    font-size: 0.75rem;
+  }
 }
 footer .container .form .right button {
   width: 210px;
@@ -2272,19 +2424,49 @@ footer .container .last-container {
   grid-template-columns: 70% 25%;
   justify-content: space-between;
 }
+@media screen and (max-width: 890px) {
+  footer .container .last-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+  }
+}
 footer .container .last-container .container-left {
   display: grid;
   grid-template-columns: 31% 31% 31%;
   justify-content: space-between;
 }
+@media screen and (max-width: 890px) {
+  footer .container .last-container .container-left {
+    justify-items: center;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 515px) {
+  footer .container .last-container .container-left {
+    text-align: center;
+    display: block;
+  }
+}
 footer .container .last-container .container-left .each-div {
   display: grid;
   grid-template-rows: 30% 70%;
+}
+@media screen and (max-width: 515px) {
+  footer .container .last-container .container-left .each-div {
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+  }
 }
 footer .container .last-container .container-left .each-div h3 {
   text-transform: uppercase;
   font-size: 1.1rem;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 515px) {
+  footer .container .last-container .container-left .each-div h3 {
+    margin-bottom: 15px;
+  }
 }
 footer .container .last-container .container-left .each-div .list {
   display: flex;
@@ -2297,6 +2479,27 @@ footer .container .last-container .container-left .each-div .list p {
 }
 footer .container .last-container .container-left .each-div .list p:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 890px) {
+  footer .container .last-container .container-right {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 510px) {
+  footer .container .last-container .container-right {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 390px) {
+  footer .container .last-container .container-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  footer .container .last-container .container-right {
+    margin-top: 50px;
+  }
 }
 footer .container .last-container .container-right .inner {
   display: flex;

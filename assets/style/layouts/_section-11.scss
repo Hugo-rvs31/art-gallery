@@ -20,6 +20,9 @@
         letter-spacing: 2px;
       }
       p {
+        @media screen and (max-width: 646px) {
+          text-align: center;
+        }
         i {
           text-decoration: underline;
           font-style: normal;
@@ -37,12 +40,34 @@
       grid-template-columns: 30% 30% 30%;
       justify-content: space-between;
       margin-top: 40px;
+      @media screen and (max-width: 646px) {
+        text-align: center;
+        display: block;
+      }
 
       .each-div {
         height: 280px;
         display: grid;
         grid-template-rows: 40% 15% 35% 10%;
+        gap: 10px;
         justify-items: center;
+        @media screen and (max-width: 1230px) {
+          gap: 20px;
+        }
+        @media screen and (max-width: 646px) {
+          text-align: center;
+          display: inline-block;
+          text-align: center;
+          padding: 0 50px;
+          height: 200px;
+          margin-bottom: 40px;
+        }
+        @media screen and (max-width: 410px) {
+          margin-bottom: 70px;
+        }
+        @media screen and (max-width: 350px) {
+          margin-bottom: 120px;
+        }
         .icon {
           display: flex;
           align-items: center;
@@ -64,6 +89,9 @@
         h5 {
           cursor: pointer;
           text-decoration: underline;
+          @media screen and (max-width: 646px) {
+            margin: 15px 0;
+          }
         }
 
         h3 {
@@ -71,6 +99,9 @@
           text-transform: uppercase;
           letter-spacing: 1.5px;
           text-align: center;
+          @media screen and (max-width: 646px) {
+            margin: 15px 0;
+          }
         }
       }
     }

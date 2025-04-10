@@ -12,6 +12,11 @@
     @media screen and (max-width: 1130px) {
       text-align: center;
     }
+    @media screen and (max-width: 370px) {
+      padding: 0 8px;
+      font-size: 1.7rem;
+      letter-spacing: 3px;
+    }
   }
 
   p {

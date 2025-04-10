@@ -2,24 +2,48 @@ footer {
   height: 490px;
   background: $light-grey-1;
   padding: 40px 0;
+  @media screen and (max-width: 890px) {
+    height: 1000px;
+  }
+  @media screen and (max-width: 515px) {
+    height: 1100px;
+  }
+  @media screen and (max-width: 420px) {
+    height: 1400px;
+  }
 
   .container {
     max-width: 1000px;
     margin: 0 auto;
+    @media screen and (max-width: 1040px) {
+      padding: 0 20px;
+    }
     h1 {
       text-transform: uppercase;
       font-size: 1.4rem;
       letter-spacing: 4px;
       margin-bottom: 40px;
+      @media screen and (max-width: 890px) {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 1.7rem;
+      }
     }
 
     .form {
       display: flex;
       gap: 30px;
       align-items: center;
+      @media screen and (max-width: 890px) {
+        flex-direction: column;
+        margin-bottom: 100px;
+      }
       .left {
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 890px) {
+          margin-bottom: 20px;
+        }
 
         input {
           border-bottom: 1.8px solid $black-2;
@@ -32,6 +56,12 @@ footer {
           padding: 10px 15px;
           color: $light-grey-2;
           width: 710px;
+          @media screen and (max-width: 1040px) {
+            width: 600px;
+          }
+          @media screen and (max-width: 645px) {
+            width: 100%;
+          }
 
           &:hover {
             border-bottom: 1.8px solid $blue-1;
@@ -44,6 +74,17 @@ footer {
           line-height: 22px;
           padding-right: 40px;
           letter-spacing: 0.5px;
+          @media screen and (max-width: 1040px) {
+            width: 610px;
+            padding-right: 0;
+          }
+          @media screen and (max-width: 645px) {
+            width: 100%;
+            text-align: center;
+          }
+          @media screen and (max-width: 345px) {
+            font-size: 0.75rem;
+          }
         }
       }
 
@@ -70,19 +111,39 @@ footer {
       display: grid;
       grid-template-columns: 70% 25%;
       justify-content: space-between;
+      @media screen and (max-width: 890px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60% 40%;
+      }
       .container-left {
         display: grid;
         grid-template-columns: 31% 31% 31%;
         justify-content: space-between;
+        @media screen and (max-width: 890px) {
+          justify-items: center;
+          margin-bottom: 80px;
+        }
+        @media screen and (max-width: 515px) {
+          text-align: center;
+          display: block;
+        }
 
         .each-div {
           display: grid;
           grid-template-rows: 30% 70%;
+          @media screen and (max-width: 515px) {
+            text-align: center;
+            display: inline-block;
+            margin: 20px;
+          }
 
           h3 {
             text-transform: uppercase;
             font-size: 1.1rem;
             letter-spacing: 1px;
+            @media screen and (max-width: 515px) {
+              margin-bottom: 15px;
+            }
           }
 
           .list {
@@ -103,6 +164,19 @@ footer {
       }
 
       .container-right {
+        @media screen and (max-width: 890px) {
+          width: 40%;
+          margin: 0 auto;
+        }
+        @media screen and (max-width: 510px) {
+          width: 60%;
+        }
+        @media screen and (max-width: 390px) {
+          width: 100%;
+        }
+        @media screen and (max-width: 420px) {
+          margin-top: 50px;
+        }
         .inner {
           display: flex;
           flex-direction: column;
