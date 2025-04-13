@@ -1062,7 +1062,7 @@ button {
 }
 
 header {
-  background: url(/assets/img/pexels-unalaurencic-20967.jpg) center/cover;
+  background: url(../img/pexels-unalaurencic-20967.jpg) center/cover;
   height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1769,13 +1769,13 @@ header .center button:hover {
   color: rgb(56, 56, 56);
 }
 .section-4 .div-right .div-img {
-  background: url(/assets/img/GettyImages-148277946.webp) center/cover;
+  background: url(../img/GettyImages-148277946.webp) center/cover;
   height: 100%;
   position: relative;
 }
 @media screen and (max-width: 656px) {
   .section-4 .div-right .div-img {
-    background: url(/assets/img/GettyImages-148277946.webp) center/contain;
+    background: url(../img/GettyImages-148277946.webp) center/contain;
   }
 }
 .section-4 .div-right .div-img .text {
@@ -2244,7 +2244,7 @@ header .center button:hover {
   color: white;
 }
 .section-7 .container .right {
-  background: url(/assets/img/pexels-tahaasamett-10540802.jpg) center/cover;
+  background: url(../img/pexels-tahaasamett-10540802.jpg) center/cover;
   display: flex;
   justify-content: center;
 }
@@ -2627,7 +2627,7 @@ header .center button:hover {
   color: white;
 }
 .section-10 .container .right {
-  background: url(/assets/img/720xAUTO_original_file_2025_02_8c6bb6b7-c3f4-400c-b26e-ea78141ab176.webp) center/cover;
+  background: url(../img/720xAUTO_original_file_2025_02_8c6bb6b7-c3f4-400c-b26e-ea78141ab176.webp) center/cover;
   height: 100%;
 }
 @media screen and (max-width: 1050px) {

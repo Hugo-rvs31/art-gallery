@@ -90,12 +90,12 @@
 
   .div-right {
     .div-img {
-      background: url(/assets/img/GettyImages-148277946.webp) center/cover;
+      background: url(../img/GettyImages-148277946.webp) center/cover;
       height: 100%;
       position: relative;
 
       @media screen and (max-width: 656px) {
-        background: url(/assets/img/GettyImages-148277946.webp) center/contain;
+        background: url(../img/GettyImages-148277946.webp) center/contain;
       }
 
       .text {
