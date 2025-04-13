@@ -77,14 +77,26 @@
         padding-left: 42px;
         font-size: 0.9rem;
         letter-spacing: 1px;
+
+        @media screen and (max-width: 537px) {
+          font-size: 0.7rem;
+        }
+
+        @media screen and (max-width: 447px) {
+          color: transparent;
+        }
       }
 
       .fa-magnifying-glass {
         position: absolute;
-        left: 0;
+
         top: 50%;
         color: $light-grey-2;
         left: 10px;
+
+        @media screen and (max-width: 537px) {
+          font-size: 0.8rem;
+        }
       }
 
       .fa-eye {
@@ -93,6 +105,15 @@
         color: $light-grey-2;
         right: 20px;
         cursor: pointer;
+
+        @media screen and (max-width: 537px) {
+          font-size: 0.8rem;
+          right: 10px;
+        }
+
+        @media screen and (max-width: 447px) {
+          display: none;
+        }
       }
     }
 

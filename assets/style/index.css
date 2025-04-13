@@ -134,7 +134,7 @@ button {
 
 #a-pop-up {
   width: 400px;
-  height: 703px;
+  height: 80%;
   background: linear-gradient(177deg, rgb(0, 0, 0) 31%, rgb(110, 110, 110) 47%, rgb(255, 255, 255) 60%);
   position: absolute;
   bottom: 85px;
@@ -143,6 +143,19 @@ button {
   position: fixed;
   z-index: 10000000;
   border-radius: 20px;
+  box-shadow: 6px 5px 12px #696969;
+}
+@media screen and (max-width: 375px) {
+  #a-pop-up {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 325px) {
+  #a-pop-up {
+    right: 0;
+    left: 0;
+    width: 100vw;
+  }
 }
 #a-pop-up:target {
   visibility: visible;
@@ -175,7 +188,7 @@ button {
   font-size: 2rem;
 }
 #a-pop-up .up {
-  height: 52%;
+  height: 60%;
 }
 #a-pop-up .up .title {
   display: flex;
@@ -225,6 +238,118 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 300px;
+}
+#a-pop-up .up .text {
+  color: white;
+  padding: 0 50px;
+}
+#a-pop-up .up .contact-us {
+  border-radius: 15px;
+  background: white;
+  margin: 22px;
+  display: flex;
+  justify-content: space-between;
+  height: 77px;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 6px 5px 12px #696969;
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  #a-pop-up .up .contact-us {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 13px;
+    padding-right: 6px;
+  }
+}
+#a-pop-up .up .contact-us:hover {
+  background: rgba(194, 194, 194, 0.9176470588);
+}
+#a-pop-up .up .contact-us:hover .left h3 {
+  color: rgb(0, 0, 156);
+}
+#a-pop-up .up .contact-us:hover .left h4 {
+  color: rgb(0, 0, 156);
+}
+#a-pop-up .up .contact-us:hover .right i {
+  color: rgb(0, 0, 156);
+}
+#a-pop-up .up .contact-us .left h3 {
+  color: black;
+  font-size: 1rem;
+}
+@media screen and (max-width: 375px) {
+  #a-pop-up .up .contact-us .left h3 {
+    font-size: 0.9rem;
+  }
+}
+#a-pop-up .up .contact-us .left h4 {
+  color: #696969;
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+@media screen and (max-width: 375px) {
+  #a-pop-up .up .contact-us .left h4 {
+    font-size: 0.8rem;
+  }
+}
+#a-pop-up .up .contact-us .right i {
+  font-size: 2rem;
+}
+@media screen and (max-width: 375px) {
+  #a-pop-up .up .contact-us .right i {
+    font-size: 1.5rem;
+  }
+}
+#a-pop-up .down {
+  height: 40%;
+  display: grid;
+  grid-template-rows: 65% 35%;
+}
+#a-pop-up .down .last-div {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  background: white;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  justify-content: space-around;
+  border-top: 1px solid rgba(207, 207, 207, 0.5137254902);
+}
+#a-pop-up .down .last-div .each-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+#a-pop-up .down .last-div .each-div:hover i {
+  color: blue;
+}
+#a-pop-up .down .last-div .each-div:hover h2 {
+  color: rgb(0, 0, 156);
+}
+#a-pop-up .down .last-div .each-div i {
+  font-size: 1.7rem;
+}
+#a-pop-up .down .last-div .each-div h2 {
+  font-size: 1rem;
+}
+@media screen and (max-width: 455px) {
+  #a-pop-up {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #a-pop-up {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #a-pop-up {
+    width: 300px;
+  }
 }
 
 .nav-principal {
@@ -313,12 +438,26 @@ button {
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 537px) {
+  .nav-principal .nav-1 .input input {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 447px) {
+  .nav-principal .nav-1 .input input {
+    color: transparent;
+  }
+}
 .nav-principal .nav-1 .input .fa-magnifying-glass {
   position: absolute;
-  left: 0;
   top: 50%;
   color: rgba(170, 170, 170, 0.9176470588);
   left: 10px;
+}
+@media screen and (max-width: 537px) {
+  .nav-principal .nav-1 .input .fa-magnifying-glass {
+    font-size: 0.8rem;
+  }
 }
 .nav-principal .nav-1 .input .fa-eye {
   position: absolute;
@@ -326,6 +465,17 @@ button {
   color: rgba(170, 170, 170, 0.9176470588);
   right: 20px;
   cursor: pointer;
+}
+@media screen and (max-width: 537px) {
+  .nav-principal .nav-1 .input .fa-eye {
+    font-size: 0.8rem;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 447px) {
+  .nav-principal .nav-1 .input .fa-eye {
+    display: none;
+  }
 }
 .nav-principal .nav-1 .first-ul {
   display: flex;
