@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Roboto";
-  src: url(/assets/fonts/Roboto_Condensed-Medium.ttf);
+  src: url(../fonts/Roboto_Condensed-Medium.ttf);
 }
 * {
   padding: 0;
@@ -362,6 +362,7 @@ button {
   z-index: 10000;
   top: 0;
   border-bottom: 1px solid rgba(207, 207, 207, 0.5137254902);
+  transition: 0.5s ease;
 }
 @media screen and (max-width: 791px) {
   .nav-principal {

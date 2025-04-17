@@ -8,6 +8,7 @@
   z-index: 10000;
   top: 0;
   border-bottom: 1px solid $light-grey-1;
+  transition: 0.5s ease;
 
   @media screen and (max-width: 791px) {
     grid-template-rows: 1fr;
