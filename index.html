@@ -16,14 +16,12 @@
     <link rel="stylesheet" href="./assets/style/index.css" />
   </head>
   <body>
-    <div class="pop-up-conversation">
-      <a href="#a-pop-up" id="pop-up-conversation">
-        <i class="fa-regular fa-message"></i>
-      </a>
+    <div id="pop-up-conversation">
+      <i class="fa-regular fa-message"></i>
     </div>
-    <div id="a-pop-up">
+    <div id="pop-up-inner">
       <div class="leave-pop-up">
-        <a href=""><i class="fa-solid fa-xmark"></i></a>
+        <i class="fa-solid fa-xmark"></i>
       </div>
       <div class="up">
         <div class="title">
@@ -541,9 +539,32 @@
     </div>
 
     <header>
-      <div class="center">
-        <h1>Artistes prometteurs et remarquables</h1>
-        <button>Découvrir</button>
+      <div class="header-1 header">
+        <div class="inner-1 inner">
+          <h1>Artistes prometteurs et remarquables</h1>
+          <button>Découvrir</button>
+        </div>
+      </div>
+      <div class="header-2 header">
+        <div class="inner-2 inner">
+          <h1>Collectionnez des œuvres d'artistes en pleine ascension</h1>
+          <button>Commencer à explorer</button>
+        </div>
+      </div>
+      <div class="header-3 header">
+        <div class="inner-3 inner">
+          <h1>Travaillez avec un conseiller artistique</h1>
+          <h4>
+            Obtenez de l'aide pour la sélection d'œuvres d'art, l'encadrement,
+            l'accrochage, l'expédition et le financement.
+          </h4>
+        </div>
+        <button>En savoir plus</button>
+      </div>
+      <div class="barres">
+        <div class="each-barre" id="barre1"></div>
+        <div class="each-barre" id="barre2"></div>
+        <div class="each-barre" id="barre3"></div>
       </div>
     </header>
 
@@ -1038,8 +1059,8 @@
         </div>
       </div>
       <div class="little-barres">
-        <div class="barre-on barre-off"></div>
-        <div class="barre-on barre-off"></div>
+        <div class="barre barre-on"></div>
+        <div class="barre barre-off"></div>
       </div>
       <div class="buttons">
         <button>Artistes</button>

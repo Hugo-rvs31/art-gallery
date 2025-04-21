@@ -16,7 +16,11 @@
   .big-container {
     position: relative;
     width: 85%;
-    height: 450px;
+    height: 500px;
+
+    @media screen and (max-width: 1210px) {
+      height: 550px;
+    }
 
     @media screen and (max-width: 1130px) {
       height: 850px;
@@ -47,7 +51,7 @@
         @media screen and (max-width: 1130px) {
           display: inline-block;
           text-align: center;
-          height: 400px;
+          height: 420px;
           width: 270px;
           margin: 12px 10px;
         }
@@ -100,7 +104,7 @@
     }
 
     .container-2 {
-      display: none;
+      visibility: hidden;
     }
   }
 
@@ -110,20 +114,22 @@
     margin-bottom: 35px;
     cursor: pointer;
 
-    .barre-on {
-      height: 3px;
-      width: 25px;
-      background: $black-2;
+    @media screen and (max-width: 1130px) {
+      margin-top: 70px;
     }
 
-    .barre-on:last-child {
-      margin-left: 10px;
+    .barre {
+      margin: 0 5px;
+      height: 3px;
+      width: 28px;
+    }
+
+    .barre-on {
+      background: black;
     }
 
     .barre-off {
-      height: 3px;
-      width: 25px;
-      background: $light-grey-2;
+      background: rgb(205 202 202 / 92%);
     }
   }
   .buttons {

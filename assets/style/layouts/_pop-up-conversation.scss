@@ -1,4 +1,4 @@
-.pop-up-conversation {
+#pop-up-conversation {
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -10,8 +10,9 @@
   align-items: center;
   justify-content: center;
   z-index: 5000000;
+  cursor: pointer;
 
-  a {
+  .fa-message {
     color: $white-1;
     width: 80%;
     height: 80%;
@@ -19,14 +20,11 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-
-    i {
-      font-size: 1.8rem;
-    }
+    font-size: 1.8rem;
   }
 }
 
-#a-pop-up {
+#pop-up-inner {
   width: 400px;
   height: 80%;
   background: linear-gradient(
@@ -71,8 +69,9 @@
     justify-content: center;
     z-index: 5000000;
     border: 5px solid $black-1;
+    cursor: pointer;
 
-    a {
+    .fa-xmark {
       color: $white-1;
       width: 80%;
       height: 80%;
@@ -81,10 +80,7 @@
       justify-content: center;
       text-decoration: none;
       background: transparent;
-
-      i {
-        font-size: 2rem;
-      }
+      font-size: 2rem;
     }
   }
   .up {

@@ -1,11 +1,12 @@
 header {
-  background: url(../img/pexels-unalaurencic-20967.jpg) center/cover;
   height: 700px;
   object-fit: cover;
   margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 100vw;
 
   @media screen and (max-width: 750px) {
     height: 600px;
@@ -17,48 +18,94 @@ header {
     height: 400px;
   }
 
-  .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .header {
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: 0.4s ease;
 
-    h1 {
-      color: $white-1;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-weight: lighter;
-
-      @media screen and (max-width: 750px) {
-        padding: 0 20px;
-        text-align: center;
-        margin-bottom: 40px;
-      }
-      @media screen and (max-width: 500px) {
-        font-size: 1.6rem;
-        line-height: 40px;
-      }
-    }
-
-    button {
-      width: 150px;
-      background: $white-1;
-      color: $black-1;
-      height: 50px;
-      font-size: 1rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-top: 20px;
-
-      @media screen and (max-width: 500px) {
-        height: 40px;
-        font-size: 0.9rem;
-      }
-
-      &:hover {
-        background: $black-1;
+    .inner {
+      h1 {
         color: $white-1;
-        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: lighter;
+
+        @media screen and (max-width: 750px) {
+          padding: 0 20px;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 1.6rem;
+          line-height: 40px;
+        }
+      }
+
+      button {
+        width: 150px;
+        background: $white-1;
+        color: $black-1;
+        height: 50px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 20px;
+
+        @media screen and (max-width: 500px) {
+          height: 40px;
+          font-size: 0.9rem;
+        }
+
+        &:hover {
+          background: $black-1;
+          color: $white-1;
+          font-weight: bold;
+        }
       }
     }
+  }
+
+  .barres {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+
+    #barre1 {
+      background: white;
+      height: 6px;
+      width: 32px;
+    }
+    .each-barre {
+      height: 3px;
+      width: 20px;
+      background: grey;
+      margin: 0 5px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .header-1 {
+    background: url(../img/pexels-unalaurencic-20967.jpg) center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inner-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .header-2 {
+    visibility: hidden;
+    background: url(../img/pexels-prismattco-2372978.jpg) center/cover;
+  }
+  .header-3 {
+    visibility: hidden;
+    background: url(../img/pexels-lilian-chagas-941875-2087708.jpg) center/cover;
   }
 }

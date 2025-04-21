@@ -106,7 +106,7 @@ button {
      object-fit: cover;
 }
 
-.pop-up-conversation {
+#pop-up-conversation {
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -118,8 +118,9 @@ button {
   align-items: center;
   justify-content: center;
   z-index: 5000000;
+  cursor: pointer;
 }
-.pop-up-conversation a {
+#pop-up-conversation .fa-message {
   color: white;
   width: 80%;
   height: 80%;
@@ -127,12 +128,10 @@ button {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-}
-.pop-up-conversation a i {
   font-size: 1.8rem;
 }
 
-#a-pop-up {
+#pop-up-inner {
   width: 400px;
   height: 80%;
   background: linear-gradient(177deg, rgb(0, 0, 0) 31%, rgb(110, 110, 110) 47%, rgb(255, 255, 255) 60%);
@@ -146,21 +145,21 @@ button {
   box-shadow: 6px 5px 12px #696969;
 }
 @media screen and (max-width: 375px) {
-  #a-pop-up {
+  #pop-up-inner {
     right: 10px;
   }
 }
 @media screen and (max-width: 325px) {
-  #a-pop-up {
+  #pop-up-inner {
     right: 0;
     left: 0;
     width: 100vw;
   }
 }
-#a-pop-up:target {
+#pop-up-inner:target {
   visibility: visible;
 }
-#a-pop-up .leave-pop-up {
+#pop-up-inner .leave-pop-up {
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -173,8 +172,9 @@ button {
   justify-content: center;
   z-index: 5000000;
   border: 5px solid black;
+  cursor: pointer;
 }
-#a-pop-up .leave-pop-up a {
+#pop-up-inner .leave-pop-up .fa-xmark {
   color: white;
   width: 80%;
   height: 80%;
@@ -183,20 +183,18 @@ button {
   justify-content: center;
   text-decoration: none;
   background: transparent;
-}
-#a-pop-up .leave-pop-up a i {
   font-size: 2rem;
 }
-#a-pop-up .up {
+#pop-up-inner .up {
   height: 60%;
 }
-#a-pop-up .up .title {
+#pop-up-inner .up .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
 }
-#a-pop-up .up .title .little-logo {
+#pop-up-inner .up .title .little-logo {
   border: white solid 1px;
   color: white;
   width: 45px;
@@ -205,45 +203,45 @@ button {
   align-items: center;
   justify-content: center;
 }
-#a-pop-up .up .title .little-logo .inner {
+#pop-up-inner .up .title .little-logo .inner {
   width: 70%;
   height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#a-pop-up .up .title .little-logo .inner p:nth-child(1) {
+#pop-up-inner .up .title .little-logo .inner p:nth-child(1) {
   padding-right: 5px;
 }
-#a-pop-up .up .title .little-logo .inner p:nth-child(3) {
+#pop-up-inner .up .title .little-logo .inner p:nth-child(3) {
   padding-left: 5px;
 }
-#a-pop-up .up .title .little-logo .inner span {
+#pop-up-inner .up .title .little-logo .inner span {
   height: 100%;
   width: 2px;
   background: white;
   color: white;
 }
-#a-pop-up .up .title .little-logo .inner p {
+#pop-up-inner .up .title .little-logo .inner p {
   font-size: 0.7rem;
 }
-#a-pop-up .up .title .div-img {
+#pop-up-inner .up .title .div-img {
   border-radius: 300px;
   height: 60px;
   width: 60px;
 }
-#a-pop-up .up .title .div-img img {
+#pop-up-inner .up .title .div-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 300px;
 }
-#a-pop-up .up .text {
+#pop-up-inner .up .text {
   color: white;
   padding: 0 50px;
 }
-#a-pop-up .up .contact-us {
+#pop-up-inner .up .contact-us {
   border-radius: 15px;
   background: white;
   margin: 22px;
@@ -256,58 +254,58 @@ button {
   cursor: pointer;
 }
 @media screen and (max-width: 375px) {
-  #a-pop-up .up .contact-us {
+  #pop-up-inner .up .contact-us {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 13px;
     padding-right: 6px;
   }
 }
-#a-pop-up .up .contact-us:hover {
+#pop-up-inner .up .contact-us:hover {
   background: rgba(194, 194, 194, 0.9176470588);
 }
-#a-pop-up .up .contact-us:hover .left h3 {
+#pop-up-inner .up .contact-us:hover .left h3 {
   color: rgb(0, 0, 156);
 }
-#a-pop-up .up .contact-us:hover .left h4 {
+#pop-up-inner .up .contact-us:hover .left h4 {
   color: rgb(0, 0, 156);
 }
-#a-pop-up .up .contact-us:hover .right i {
+#pop-up-inner .up .contact-us:hover .right i {
   color: rgb(0, 0, 156);
 }
-#a-pop-up .up .contact-us .left h3 {
+#pop-up-inner .up .contact-us .left h3 {
   color: black;
   font-size: 1rem;
 }
 @media screen and (max-width: 375px) {
-  #a-pop-up .up .contact-us .left h3 {
+  #pop-up-inner .up .contact-us .left h3 {
     font-size: 0.9rem;
   }
 }
-#a-pop-up .up .contact-us .left h4 {
+#pop-up-inner .up .contact-us .left h4 {
   color: #696969;
   font-size: 0.95rem;
   margin-top: 4px;
 }
 @media screen and (max-width: 375px) {
-  #a-pop-up .up .contact-us .left h4 {
+  #pop-up-inner .up .contact-us .left h4 {
     font-size: 0.8rem;
   }
 }
-#a-pop-up .up .contact-us .right i {
+#pop-up-inner .up .contact-us .right i {
   font-size: 2rem;
 }
 @media screen and (max-width: 375px) {
-  #a-pop-up .up .contact-us .right i {
+  #pop-up-inner .up .contact-us .right i {
     font-size: 1.5rem;
   }
 }
-#a-pop-up .down {
+#pop-up-inner .down {
   height: 40%;
   display: grid;
   grid-template-rows: 65% 35%;
 }
-#a-pop-up .down .last-div {
+#pop-up-inner .down .last-div {
   display: grid;
   grid-template-columns: 40% 40%;
   background: white;
@@ -316,7 +314,7 @@ button {
   justify-content: space-around;
   border-top: 1px solid rgba(207, 207, 207, 0.5137254902);
 }
-#a-pop-up .down .last-div .each-div {
+#pop-up-inner .down .last-div .each-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,30 +322,30 @@ button {
   gap: 15px;
   cursor: pointer;
 }
-#a-pop-up .down .last-div .each-div:hover i {
+#pop-up-inner .down .last-div .each-div:hover i {
   color: blue;
 }
-#a-pop-up .down .last-div .each-div:hover h2 {
+#pop-up-inner .down .last-div .each-div:hover h2 {
   color: rgb(0, 0, 156);
 }
-#a-pop-up .down .last-div .each-div i {
+#pop-up-inner .down .last-div .each-div i {
   font-size: 1.7rem;
 }
-#a-pop-up .down .last-div .each-div h2 {
+#pop-up-inner .down .last-div .each-div h2 {
   font-size: 1rem;
 }
 @media screen and (max-width: 455px) {
-  #a-pop-up {
+  #pop-up-inner {
     width: 350px;
   }
 }
 @media screen and (max-width: 400px) {
-  #a-pop-up {
+  #pop-up-inner {
     width: 330px;
   }
 }
 @media screen and (max-width: 375px) {
-  #a-pop-up {
+  #pop-up-inner {
     width: 300px;
   }
 }
@@ -1063,7 +1061,6 @@ button {
 }
 
 header {
-  background: url(../img/pexels-unalaurencic-20967.jpg) center/cover;
   height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1071,6 +1068,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 100vw;
 }
 @media screen and (max-width: 750px) {
   header {
@@ -1087,31 +1086,34 @@ header {
     height: 400px;
   }
 }
-header .center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+header .header {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  transition: 0.4s ease;
 }
-header .center h1 {
+header .header .inner h1 {
   color: white;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: lighter;
 }
 @media screen and (max-width: 750px) {
-  header .center h1 {
+  header .header .inner h1 {
     padding: 0 20px;
     text-align: center;
     margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 500px) {
-  header .center h1 {
+  header .header .inner h1 {
     font-size: 1.6rem;
     line-height: 40px;
   }
 }
-header .center button {
+header .header .inner button {
   width: 150px;
   background: white;
   color: black;
@@ -1122,15 +1124,52 @@ header .center button {
   margin-top: 20px;
 }
 @media screen and (max-width: 500px) {
-  header .center button {
+  header .header .inner button {
     height: 40px;
     font-size: 0.9rem;
   }
 }
-header .center button:hover {
+header .header .inner button:hover {
   background: black;
   color: white;
   font-weight: bold;
+}
+header .barres {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+}
+header .barres #barre1 {
+  background: white;
+  height: 6px;
+  width: 32px;
+}
+header .barres .each-barre {
+  height: 3px;
+  width: 20px;
+  background: grey;
+  margin: 0 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+header .header-1 {
+  background: url(../img/pexels-unalaurencic-20967.jpg) center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-1 .inner-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .header-2 {
+  visibility: hidden;
+  background: url(../img/pexels-prismattco-2372978.jpg) center/cover;
+}
+header .header-3 {
+  visibility: hidden;
+  background: url(../img/pexels-lilian-chagas-941875-2087708.jpg) center/cover;
 }
 
 .section-1 {
@@ -1981,7 +2020,12 @@ header .center button:hover {
 .section-6 .big-container {
   position: relative;
   width: 85%;
-  height: 450px;
+  height: 500px;
+}
+@media screen and (max-width: 1210px) {
+  .section-6 .big-container {
+    height: 550px;
+  }
 }
 @media screen and (max-width: 1130px) {
   .section-6 .big-container {
@@ -2017,7 +2061,7 @@ header .center button:hover {
   .section-6 .big-container .container .each-div {
     display: inline-block;
     text-align: center;
-    height: 400px;
+    height: 420px;
     width: 270px;
     margin: 12px 10px;
   }
@@ -2066,7 +2110,7 @@ header .center button:hover {
   cursor: pointer;
 }
 .section-6 .big-container .container-2 {
-  display: none;
+  visibility: hidden;
 }
 .section-6 .little-barres {
   display: flex;
@@ -2074,18 +2118,21 @@ header .center button:hover {
   margin-bottom: 35px;
   cursor: pointer;
 }
-.section-6 .little-barres .barre-on {
-  height: 3px;
-  width: 25px;
-  background: rgb(56, 56, 56);
+@media screen and (max-width: 1130px) {
+  .section-6 .little-barres {
+    margin-top: 70px;
+  }
 }
-.section-6 .little-barres .barre-on:last-child {
-  margin-left: 10px;
+.section-6 .little-barres .barre {
+  margin: 0 5px;
+  height: 3px;
+  width: 28px;
+}
+.section-6 .little-barres .barre-on {
+  background: black;
 }
 .section-6 .little-barres .barre-off {
-  height: 3px;
-  width: 25px;
-  background: rgba(170, 170, 170, 0.9176470588);
+  background: rgba(205, 202, 202, 0.92);
 }
 .section-6 .buttons {
   cursor: pointer;
