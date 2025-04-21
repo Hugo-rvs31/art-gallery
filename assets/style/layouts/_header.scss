@@ -31,6 +31,7 @@ header {
         letter-spacing: 2px;
         text-transform: uppercase;
         font-weight: lighter;
+        font-size: 2.2rem;
 
         @media screen and (max-width: 750px) {
           padding: 0 20px;
@@ -102,10 +103,65 @@ header {
 
   .header-2 {
     visibility: hidden;
-    background: url(../img/pexels-prismattco-2372978.jpg) center/cover;
+    background: url(../img/1046954-le-musee-d-art-moderne-de-la-ville-de-paris-un-voyage-artistique-du-xxeme-au-xxieme-siecle.jpg)
+      center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .inner-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 150px;
+      h1 {
+        color: $black-1;
+        text-align: center;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $black-2;
+        color: $white-1;
+        width: 150px;
+        height: 80px;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        line-height: 20px;
+
+        &:hover {
+          background: $white-1;
+          color: $black-2;
+          font-size: 0.9rem;
+        }
+      }
+    }
   }
   .header-3 {
     visibility: hidden;
-    background: url(../img/pexels-lilian-chagas-941875-2087708.jpg) center/cover;
+    background: url(../img/une-installation-des-oeuvres-de-chiara-capellini-dans-l-enceinte-de-l-ancien-theatre-un-lieu-etonnant-situe-dans-le-centre-historique-de-beaune.jpg)
+      center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inner-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        color: $white-1;
+        margin: 30px 0;
+        font-size: 1.6rem;
+        padding: 0 100px;
+        text-align: center;
+      }
+    }
   }
 }

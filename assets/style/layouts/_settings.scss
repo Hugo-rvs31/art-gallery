@@ -17,10 +17,10 @@ $blue-1: rgb(0, 0, 156);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: $font1;
 }
 
 body {
-  font-family: $font1;
   color: $black-2;
   font-weight: lighter;
 }

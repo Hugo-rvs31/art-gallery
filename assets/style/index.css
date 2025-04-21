@@ -6,10 +6,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 body {
-  font-family: Roboto, sans-serif;
   color: rgb(56, 56, 56);
   font-weight: lighter;
 }
@@ -1099,6 +1099,7 @@ header .header .inner h1 {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: lighter;
+  font-size: 2.2rem;
 }
 @media screen and (max-width: 750px) {
   header .header .inner h1 {
@@ -1165,11 +1166,59 @@ header .header-1 .inner-1 {
 }
 header .header-2 {
   visibility: hidden;
-  background: url(../img/pexels-prismattco-2372978.jpg) center/cover;
+  background: url(../img/1046954-le-musee-d-art-moderne-de-la-ville-de-paris-un-voyage-artistique-du-xxeme-au-xxieme-siecle.jpg) center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .header-2 .inner-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 150px;
+}
+header .header-2 .inner-2 h1 {
+  color: black;
+  text-align: center;
+}
+header .header-2 .inner-2 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(56, 56, 56);
+  color: white;
+  width: 150px;
+  height: 80px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  line-height: 20px;
+}
+header .header-2 .inner-2 button:hover {
+  background: white;
+  color: rgb(56, 56, 56);
+  font-size: 0.9rem;
 }
 header .header-3 {
   visibility: hidden;
-  background: url(../img/pexels-lilian-chagas-941875-2087708.jpg) center/cover;
+  background: url(../img/une-installation-des-oeuvres-de-chiara-capellini-dans-l-enceinte-de-l-ancien-theatre-un-lieu-etonnant-situe-dans-le-centre-historique-de-beaune.jpg) center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-3 .inner-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .header-3 .inner-3 h4 {
+  color: white;
+  margin: 30px 0;
+  font-size: 1.6rem;
+  padding: 0 100px;
+  text-align: center;
 }
 
 .section-1 {
@@ -2044,6 +2093,7 @@ header .header-3 {
   grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
   justify-content: space-between;
   position: absolute;
+  transition: 0.3s ease-in-out;
 }
 @media screen and (max-width: 1130px) {
   .section-6 .big-container .container {
