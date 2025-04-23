@@ -12,6 +12,11 @@ window.addEventListener("scroll", () => {
   }
 
   lastScroll = window.scrollY;
+
+  if ((lastScroll < 800) & (estStop == 0)) {
+    monTimer();
+    estStop = 1;
+  }
 });
 
 const container1 = document.querySelector(".container-1");
@@ -24,6 +29,58 @@ const LeavePopUp = document.querySelector(".leave-pop-up");
 const header1 = document.querySelector(".header-1");
 const header2 = document.querySelector(".header-2");
 const header3 = document.querySelector(".header-3");
+const header = document.querySelector(".header");
+const headerPrincipal = document.querySelector("header");
+let barreAffichee;
+let estStop;
+
+function affBarre1() {
+  barreAffichee = "1";
+  header1.style.opacity = "1";
+  header2.style.opacity = 0;
+  header3.style.opacity = 0;
+  barre1.style.background = "white";
+  barre1.style.height = "6px";
+  barre1.style.width = "32px";
+  barre2.style.background = "grey";
+  barre2.style.height = "3px";
+  barre2.style.width = "20px";
+  barre3.style.background = "grey";
+  barre3.style.height = "3px";
+  barre3.style.width = "20px";
+}
+
+function affBarre2() {
+  barreAffichee = "2";
+  header1.style.opacity = 0;
+  header3.style.opacity = 0;
+  header2.style.opacity = "1";
+  barre2.style.background = "white";
+  barre2.style.height = "6px";
+  barre2.style.width = "32px";
+  barre1.style.background = "grey";
+  barre1.style.height = "3px";
+  barre1.style.width = "20px";
+  barre3.style.background = "grey";
+  barre3.style.height = "3px";
+  barre3.style.width = "20px";
+}
+
+function affBarre3() {
+  barreAffichee = "3";
+  header1.style.opacity = 0;
+  header2.style.opacity = 0;
+  header3.style.opacity = "1";
+  barre3.style.background = "white";
+  barre3.style.height = "6px";
+  barre3.style.width = "32px";
+  barre2.style.background = "grey";
+  barre2.style.height = "3px";
+  barre2.style.width = "20px";
+  barre1.style.background = "grey";
+  barre1.style.height = "3px";
+  barre1.style.width = "20px";
+}
 
 barreLeft.addEventListener("click", () => {
   container1.style.visibility = "visible";
@@ -50,46 +107,33 @@ LeavePopUp.addEventListener("click", () => {
 });
 
 barre1.addEventListener("click", () => {
-  header1.style.visibility = "visible";
-  header2.style.visibility = "hidden";
-  header3.style.visibility = "hidden";
-  barre1.style.background = "white";
-  barre1.style.height = "6px";
-  barre1.style.width = "32px";
-  barre2.style.background = "grey";
-  barre2.style.height = "3px";
-  barre2.style.width = "20px";
-  barre3.style.background = "grey";
-  barre3.style.height = "3px";
-  barre3.style.width = "20px";
+  affBarre1();
 });
 
 barre2.addEventListener("click", () => {
-  header1.style.visibility = "hidden";
-  header3.style.visibility = "hidden";
-  header2.style.visibility = "visible";
-  barre2.style.background = "white";
-  barre2.style.height = "6px";
-  barre2.style.width = "32px";
-  barre1.style.background = "grey";
-  barre1.style.height = "3px";
-  barre1.style.width = "20px";
-  barre3.style.background = "grey";
-  barre3.style.height = "3px";
-  barre3.style.width = "20px";
+  affBarre2();
 });
 
 barre3.addEventListener("click", () => {
-  header1.style.visibility = "hidden";
-  header2.style.visibility = "hidden";
-  header3.style.visibility = "visible";
-  barre3.style.background = "white";
-  barre3.style.height = "6px";
-  barre3.style.width = "32px";
-  barre2.style.background = "grey";
-  barre2.style.height = "3px";
-  barre2.style.width = "20px";
-  barre1.style.background = "grey";
-  barre1.style.height = "3px";
-  barre1.style.width = "20px";
+  affBarre3();
 });
+
+function monTimer() {
+  console.log("mmmm");
+
+  if (barreAffichee == "1") {
+    affBarre2();
+  } else if (barreAffichee == "2") {
+    affBarre3();
+  } else if (barreAffichee == "3") {
+    affBarre1();
+  }
+  if (lastScroll < 800) {
+    setTimeout(monTimer, 3000);
+  } else estStop = 0;
+}
+
+window.onload = () => {
+  barreAffichee = "3";
+  monTimer();
+};

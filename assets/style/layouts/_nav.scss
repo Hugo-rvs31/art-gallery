@@ -173,6 +173,10 @@
           flex-direction: column;
           border-radius: 70px;
 
+          @media screen and (max-width: 1240px) {
+            left: -30%;
+          }
+
           .transparent {
             background: transparent;
             height: 10%;

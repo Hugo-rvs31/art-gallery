@@ -23,7 +23,7 @@ header {
     height: 100%;
     position: absolute;
     width: 100%;
-    transition: 0.4s ease;
+    transition: 0.7s ease;
 
     .inner {
       h1 {
@@ -93,6 +93,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 1;
 
     .inner-1 {
       display: flex;
@@ -102,7 +103,7 @@ header {
   }
 
   .header-2 {
-    visibility: hidden;
+    opacity: 0;
     background: url(../img/1046954-le-musee-d-art-moderne-de-la-ville-de-paris-un-voyage-artistique-du-xxeme-au-xxieme-siecle.jpg)
       center/cover;
     display: flex;
@@ -143,7 +144,7 @@ header {
     }
   }
   .header-3 {
-    visibility: hidden;
+    opacity: 0;
     background: url(../img/une-installation-des-oeuvres-de-chiara-capellini-dans-l-enceinte-de-l-ancien-theatre-un-lieu-etonnant-situe-dans-le-centre-historique-de-beaune.jpg)
       center/cover;
     display: flex;

@@ -12,6 +12,7 @@
 body {
   color: rgb(56, 56, 56);
   font-weight: lighter;
+  overflow-x: hidden;
 }
 
 h1,
@@ -533,6 +534,11 @@ button {
   left: -55%;
   flex-direction: column;
   border-radius: 70px;
+}
+@media screen and (max-width: 1240px) {
+  .nav-principal .nav-1 .first-ul li .pop-up-nav-1 {
+    left: -30%;
+  }
 }
 .nav-principal .nav-1 .first-ul li .pop-up-nav-1 .transparent {
   background: transparent;
@@ -1092,7 +1098,7 @@ header .header {
   height: 100%;
   position: absolute;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.7s ease;
 }
 header .header .inner h1 {
   color: white;
@@ -1158,6 +1164,7 @@ header .header-1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
 }
 header .header-1 .inner-1 {
   display: flex;
@@ -1165,7 +1172,7 @@ header .header-1 .inner-1 {
   align-items: center;
 }
 header .header-2 {
-  visibility: hidden;
+  opacity: 0;
   background: url(../img/1046954-le-musee-d-art-moderne-de-la-ville-de-paris-un-voyage-artistique-du-xxeme-au-xxieme-siecle.jpg) center/cover;
   display: flex;
   flex-direction: column;
@@ -1202,7 +1209,7 @@ header .header-2 .inner-2 button:hover {
   font-size: 0.9rem;
 }
 header .header-3 {
-  visibility: hidden;
+  opacity: 0;
   background: url(../img/une-installation-des-oeuvres-de-chiara-capellini-dans-l-enceinte-de-l-ancien-theatre-un-lieu-etonnant-situe-dans-le-centre-historique-de-beaune.jpg) center/cover;
   display: flex;
   align-items: center;
