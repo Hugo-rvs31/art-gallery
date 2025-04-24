@@ -33,6 +33,13 @@ const header = document.querySelector(".header");
 const headerPrincipal = document.querySelector("header");
 let barreAffichee;
 let estStop;
+const DivCarrousel = document.querySelector(".center-section-9");
+const eachDivCarrousel = document.querySelector(".each-div-section-9");
+const buttonLeft = document.querySelector(".button-angle-left");
+const buttonRight = document.querySelector(".button-angle-right");
+let slides, slideWidth;
+
+let compteur = 0;
 
 function affBarre1() {
   barreAffichee = "1";
@@ -136,4 +143,58 @@ function monTimer() {
 window.onload = () => {
   barreAffichee = "3";
   monTimer();
+
+  let firstDiv = DivCarrousel.firstElementChild.cloneNode(true);
+  let secondDiv = DivCarrousel.children[1].cloneNode(true);
+  let thirdDiv = DivCarrousel.children[2].cloneNode(true);
+  let fourthDiv = DivCarrousel.children[3].cloneNode(true);
+
+  let tenDiv = DivCarrousel.lastElementChild.cloneNode(true);
+  let nineDiv = DivCarrousel.children[8].cloneNode(true);
+  let eightDiv = DivCarrousel.children[7].cloneNode(true);
+  let sevenDiv = DivCarrousel.children[6].cloneNode(true);
+
+  DivCarrousel.appendChild(firstDiv);
+  DivCarrousel.appendChild(secondDiv);
+  DivCarrousel.appendChild(thirdDiv);
+  DivCarrousel.appendChild(fourthDiv);
+
+  DivCarrousel.appendChild(tenDiv);
+  DivCarrousel.appendChild(nineDiv);
+  DivCarrousel.appendChild(eightDiv);
+  DivCarrousel.appendChild(sevenDiv);
+
+  slides = Array.from(DivCarrousel.children);
+
+  slideWidth = eachDivCarrousel.getBoundingClientRect().width;
+
+  buttonLeft.addEventListener("click", slidePrevious);
 };
+
+function slideNext() {
+  compteur++;
+
+  let decal = -slideWidth * compteur;
+  DivCarrousel.style.transform = `translateX(${decal}px)`;
+
+  if (compteur >= slides.length - 4) {
+    compteur = 0;
+  }
+}
+
+buttonRight.addEventListener("click", slideNext);
+
+function slidePrevious() {
+  compteur--;
+
+  if (compteur < 4) {
+    compteur = slides.length - 4;
+    let decal = -slideWidth * compteur;
+    DivCarrousel.style.transform = `translateX(${decal}px)`;
+  }
+
+  let decal = -slideWidth * compteur;
+  DivCarrousel.style.transform = `translateX(${decal}px)`;
+}
+
+buttonLeft.addEventListener("click", slidePrevious);

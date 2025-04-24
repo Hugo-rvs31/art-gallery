@@ -2484,13 +2484,15 @@ header .header-3 .inner-3 h4 {
 }
 
 .section-9 {
-  width: 98%;
+  width: 100%;
   display: grid;
   grid-template-columns: 16% 84%;
   max-width: 1400px;
   height: 400px;
   align-items: center;
   margin: 0 auto;
+  position: relative;
+  gap: 20px;
 }
 @media screen and (max-width: 1356px) {
   .section-9 {
@@ -2502,8 +2504,29 @@ header .header-3 .inner-3 h4 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30% 70%;
-    height: 500px;
+    height: 550px;
   }
+}
+.section-9 .button-angle-right {
+  position: absolute;
+  right: -90px;
+}
+.section-9 .button-angle-left {
+  left: 200px;
+}
+.section-9 .button-angle {
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+}
+.section-9 .button-angle i {
+  font-size: 2.5rem;
+  color: rgba(170, 170, 170, 0.9176470588);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.section-9 .button-angle i:hover {
+  transform: scale(1.3);
 }
 .section-9 .left {
   padding-top: -30px;
@@ -2526,124 +2549,54 @@ header .header-3 .inner-3 h4 {
   font-style: normal;
 }
 .section-9 .container {
-  display: grid;
-  grid-template-columns: 5% 90% 5%;
-  align-items: center;
   height: 70%;
-}
-@media screen and (max-width: 510px) {
-  .section-9 .container {
-    grid-template-columns: 15% 70% 15%;
-  }
-}
-@media screen and (max-width: 300px) {
-  .section-9 .container {
-    grid-template-columns: 10% 80% 10%;
-  }
-}
-.section-9 .container .button-angle i {
-  font-size: 2.5rem;
-  color: rgba(170, 170, 170, 0.9176470588);
-  transition: 0.5s ease;
-  cursor: pointer;
-}
-.section-9 .container .button-angle i:hover {
-  transform: scale(1.3);
-}
-.section-9 .container .button-angle-right {
+  width: 100%;
   display: flex;
-  flex-direction: row-reverse;
+  overflow: hidden;
 }
-@media screen and (max-width: 1532px) {
-  .section-9 .container .button-angle-right {
-    flex-direction: row;
-  }
+.section-9 .container .center-section-9 {
+  display: flex;
+  width: 100%;
 }
-@media screen and (max-width: 1532px) {
-  .section-9 .container .button-angle-left {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-}
-@media screen and (max-width: 790px) {
-  .section-9 .container .button-angle-left {
-    padding-left: -10px;
-  }
-}
-.section-9 .container .center {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (max-width: 1218px) {
-  .section-9 .container .center {
-    grid-template-columns: 32.5% 32.5% 32.5%;
-  }
-}
-@media screen and (max-width: 830px) {
-  .section-9 .container .center {
-    grid-template-columns: 47% 47%;
-  }
-}
-@media screen and (max-width: 790px) {
-  .section-9 .container .center {
-    grid-template-columns: 49% 49%;
-  }
-}
-@media screen and (max-width: 510px) {
-  .section-9 .container .center {
-    grid-template-columns: 100%;
-  }
-}
-.section-9 .container .center .each-div {
+.section-9 .container .center-section-9 .each-div-section-9 {
   height: 100%;
   display: grid;
   grid-template-rows: 35% 50% 15%;
   cursor: pointer;
+  flex: 1 0 25%;
+  background: pink;
 }
-.section-9 .container .center .each-div .up {
+.section-9 .container .center-section-9 .each-div-section-9 .up {
   display: flex;
   align-items: center;
 }
-.section-9 .container .center .each-div .up h6 {
+.section-9 .container .center-section-9 .each-div-section-9 .up h6 {
   font-size: 0.9rem;
 }
-.section-9 .container .center .each-div .up .stars {
+.section-9 .container .center-section-9 .each-div-section-9 .up .stars {
   margin-left: 15px;
 }
-.section-9 .container .center .each-div .text-commentaire {
+.section-9 .container .center-section-9 .each-div-section-9 .text-commentaire {
   font-size: 0.9rem;
-  padding-right: 25px;
   line-height: 22px;
 }
-.section-9 .container .center .each-div p {
+.section-9 .container .center-section-9 .each-div-section-9 p {
   display: flex;
   flex-direction: row-reverse;
   font-size: 0.6rem;
   color: rgba(170, 170, 170, 0.9176470588);
-  padding-right: 17px;
 }
-@media screen and (max-width: 1218px) {
-  .section-9 .container .center .each-div:nth-child(4) {
-    display: none;
-  }
+.section-9 .container .center-section-9 .div2 {
+  background: blue;
 }
-@media screen and (max-width: 830px) {
-  .section-9 .container .center .each-div:nth-child(3) {
-    display: none;
-  }
+.section-9 .container .center-section-9 .div3 {
+  background: green;
 }
-@media screen and (max-width: 790px) {
-  .section-9 .container .center .each-div:first-child {
-    padding-left: 20px;
-  }
+.section-9 .container .center-section-9 .div4 {
+  background: yellow;
 }
-@media screen and (max-width: 510px) {
-  .section-9 .container .center .each-div:nth-child(2) {
-    display: none;
-  }
+.section-9 .container .center-section-9 .div10 {
+  background: red;
 }
 
 .section-10 {
