@@ -13,26 +13,40 @@
     margin: 40px auto;
   }
 
-  @media screen and (max-width: 1356px) {
+  @media screen and (max-width: 1550px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30% 70%;
     height: 550px;
+    gap: 0;
   }
 
   .button-angle-right {
     position: absolute;
-    right: -90px;
+    right: -60px;
+
+    @media screen and (max-width: 1550px) {
+      right: 20px;
+      margin: 0;
+    }
   }
 
   .button-angle-left {
     left: 200px;
+
+    @media screen and (max-width: 1550px) {
+      left: 20px;
+    }
   }
 
   .button-angle {
     position: absolute;
     top: 50%;
     z-index: 1000;
+
+    @media screen and (max-width: 1550px) {
+      top: 65%;
+    }
     i {
       font-size: 2.5rem;
       color: $light-grey-2;
@@ -51,6 +65,10 @@
     flex-direction: column;
     align-items: center;
     gap: 7px;
+
+    @media screen and (max-width: 1550px) {
+      margin-top: 60px;
+    }
     h2 {
       font-size: 1.8rem;
       letter-spacing: 2px;
@@ -73,6 +91,15 @@
     display: flex;
     overflow: hidden;
 
+    @media screen and (max-width: 1550px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1140px) {
+      width: 80%;
+    }
+
     .center-section-9 {
       display: flex;
       width: 100%;
@@ -83,8 +110,20 @@
         grid-template-rows: 35% 50% 15%;
         cursor: pointer;
         flex: 1 0 25%;
+        padding: 0 29px;
 
-        background: pink;
+        @media screen and (max-width: 1410px) {
+          flex: 1 0 33.33%;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 1000px) {
+          flex: 1 0 50%;
+        }
+
+        @media screen and (max-width: 605px) {
+          flex: 1 0 100%;
+        }
 
         .up {
           display: flex;
@@ -110,21 +149,6 @@
           font-size: 0.6rem;
           color: $light-grey-2;
         }
-      }
-
-      .div2 {
-        background: blue;
-      }
-      .div3 {
-        background: green;
-      }
-
-      .div4 {
-        background: yellow;
-      }
-
-      .div10 {
-        background: red;
       }
     }
   }

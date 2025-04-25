@@ -23,9 +23,6 @@ const container1 = document.querySelector(".container-1");
 const container2 = document.querySelector(".container-2");
 const barreLeft = document.querySelector(".barre-on");
 const barreRight = document.querySelector(".barre-off");
-const popUpConversation = document.getElementById("pop-up-conversation");
-const popUpInner = document.getElementById("pop-up-inner");
-const LeavePopUp = document.querySelector(".leave-pop-up");
 const header1 = document.querySelector(".header-1");
 const header2 = document.querySelector(".header-2");
 const header3 = document.querySelector(".header-3");
@@ -37,9 +34,40 @@ const DivCarrousel = document.querySelector(".center-section-9");
 const eachDivCarrousel = document.querySelector(".each-div-section-9");
 const buttonLeft = document.querySelector(".button-angle-left");
 const buttonRight = document.querySelector(".button-angle-right");
+const buttonOpen = document.getElementById("pop-up-conversation");
+const buttonclosed = document.querySelector(".leave-pop-up");
+const logoAccueil = document.getElementById("logo-accueil");
+const logoConversation = document.getElementById("logo-conversation");
+
+//même élement mais trois const
+const PageBoth = document.querySelector(".pop-up-inner");
+const Pageleft = document.querySelector(".pop-up-left");
+const Pageright = document.querySelector(".pop-up-right");
 let slides, slideWidth;
 
 let compteur = 0;
+
+buttonOpen.addEventListener("click", () => {
+  buttonOpen.style.visibility = "hidden";
+  buttonclosed.style.visibility = "visible";
+  PageBoth.style.visibility = "visible";
+});
+
+buttonclosed.addEventListener("click", () => {
+  buttonclosed.style.visibility = "hidden";
+  buttonOpen.style.visibility = "visible";
+  PageBoth.style.visibility = "hidden";
+});
+
+logoConversation.addEventListener("click", () => {
+  Pageleft.style.visibility = "hidden";
+  Pageright.style.visibility = "visible";
+});
+
+logoAccueil.addEventListener("click", () => {
+  Pageright.style.visibility = "hidden";
+  Pageleft.style.visibility = "visible";
+});
 
 function affBarre1() {
   barreAffichee = "1";
@@ -105,14 +133,6 @@ barreRight.addEventListener("click", () => {
   console.log("dgfdh");
 });
 
-popUpConversation.addEventListener("click", () => {
-  popUpInner.style.visibility = "visible";
-});
-
-LeavePopUp.addEventListener("click", () => {
-  popUpInner.style.visibility = "hidden";
-});
-
 barre1.addEventListener("click", () => {
   affBarre1();
 });
@@ -136,7 +156,7 @@ function monTimer() {
     affBarre1();
   }
   if (lastScroll < 800) {
-    setTimeout(monTimer, 3000);
+    setTimeout(monTimer, 7000);
   } else estStop = 0;
 }
 
@@ -149,25 +169,16 @@ window.onload = () => {
   let thirdDiv = DivCarrousel.children[2].cloneNode(true);
   let fourthDiv = DivCarrousel.children[3].cloneNode(true);
 
-  let tenDiv = DivCarrousel.lastElementChild.cloneNode(true);
-  let nineDiv = DivCarrousel.children[8].cloneNode(true);
-  let eightDiv = DivCarrousel.children[7].cloneNode(true);
-  let sevenDiv = DivCarrousel.children[6].cloneNode(true);
-
   DivCarrousel.appendChild(firstDiv);
   DivCarrousel.appendChild(secondDiv);
   DivCarrousel.appendChild(thirdDiv);
   DivCarrousel.appendChild(fourthDiv);
 
-  DivCarrousel.appendChild(tenDiv);
-  DivCarrousel.appendChild(nineDiv);
-  DivCarrousel.appendChild(eightDiv);
-  DivCarrousel.appendChild(sevenDiv);
-
   slides = Array.from(DivCarrousel.children);
 
   slideWidth = eachDivCarrousel.getBoundingClientRect().width;
 
+  buttonRight.addEventListener("click", slideNext);
   buttonLeft.addEventListener("click", slidePrevious);
 };
 
@@ -182,19 +193,16 @@ function slideNext() {
   }
 }
 
-buttonRight.addEventListener("click", slideNext);
-
 function slidePrevious() {
   compteur--;
 
-  if (compteur < 4) {
+  if (compteur < 0) {
     compteur = slides.length - 4;
     let decal = -slideWidth * compteur;
     DivCarrousel.style.transform = `translateX(${decal}px)`;
+    setTimeout(slidePrevious, 1);
   }
 
   let decal = -slideWidth * compteur;
   DivCarrousel.style.transform = `translateX(${decal}px)`;
 }
-
-buttonLeft.addEventListener("click", slidePrevious);
