@@ -28,8 +28,8 @@
   position: fixed;
   bottom: 10px;
   right: 10px;
-  height: 62px;
-  width: 62px;
+  height: 64px;
+  width: 64px;
   background: $black-1;
   border-radius: 300px;
   display: flex;
@@ -266,5 +266,107 @@
 
 .pop-up-right {
   visibility: hidden;
-  background: pink;
+  background: $white-1;
+  display: grid;
+  grid-template-rows: 10% 76% 14%;
+
+  .title {
+    border-bottom: 1px solid $light-grey-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 1.4rem;
+    }
+  }
+
+  .center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 83% 17%;
+    align-items: center;
+    .inner-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      i {
+        font-size: 3rem;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      p {
+      }
+    }
+
+    .bottom-center {
+      display: flex;
+      justify-content: center;
+      .text {
+        display: flex;
+        align-items: center;
+        background: $black-1;
+
+        height: 42px;
+        padding: 0 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 80%;
+        h2 {
+          font-size: 1rem;
+          color: $white-1;
+          letter-spacing: 0.5px;
+        }
+
+        i {
+          color: $white-1;
+          margin-left: 20px;
+          font-size: 1.1rem;
+        }
+
+        p {
+        }
+      }
+    }
+  }
+
+  .last-div {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    background: $white-1;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    justify-content: space-around;
+    border-top: 1px solid $light-grey-1;
+
+    .each-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+
+      cursor: pointer;
+
+      &:hover i {
+        color: blue;
+      }
+
+      &:hover h2 {
+        color: $blue-1;
+      }
+      i {
+        font-size: 1.7rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
 }

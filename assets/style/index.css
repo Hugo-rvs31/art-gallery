@@ -136,8 +136,8 @@ button {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  height: 62px;
-  width: 62px;
+  height: 64px;
+  width: 64px;
   background: black;
   border-radius: 300px;
   display: flex;
@@ -355,11 +355,95 @@ button {
 
 .pop-up-right {
   visibility: hidden;
-  background: pink;
+  background: white;
+  display: grid;
+  grid-template-rows: 10% 76% 14%;
+}
+.pop-up-right .title {
+  border-bottom: 1px solid rgba(207, 207, 207, 0.5137254902);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-right .title h1 {
+  font-size: 1.4rem;
+}
+.pop-up-right .center {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 83% 17%;
+  align-items: center;
+}
+.pop-up-right .center .inner-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.pop-up-right .center .inner-center i {
+  font-size: 3rem;
+}
+.pop-up-right .center .inner-center h1 {
+  font-size: 1.4rem;
+}
+.pop-up-right .center .bottom-center {
+  display: flex;
+  justify-content: center;
+}
+.pop-up-right .center .bottom-center .text {
+  display: flex;
+  align-items: center;
+  background: black;
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 80%;
+}
+.pop-up-right .center .bottom-center .text h2 {
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.5px;
+}
+.pop-up-right .center .bottom-center .text i {
+  color: white;
+  margin-left: 20px;
+  font-size: 1.1rem;
+}
+.pop-up-right .last-div {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  background: white;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  justify-content: space-around;
+  border-top: 1px solid rgba(207, 207, 207, 0.5137254902);
+}
+.pop-up-right .last-div .each-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+.pop-up-right .last-div .each-div:hover i {
+  color: blue;
+}
+.pop-up-right .last-div .each-div:hover h2 {
+  color: rgb(0, 0, 156);
+}
+.pop-up-right .last-div .each-div i {
+  font-size: 1.7rem;
+}
+.pop-up-right .last-div .each-div h2 {
+  font-size: 1rem;
 }
 
 .nav-principal {
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-rows: 1fr 1fr;
   height: 100px;
@@ -2510,6 +2594,7 @@ header .header-3 .inner-3 h4 {
   margin: 0 auto;
   position: relative;
   gap: 20px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1356px) {
   .section-9 {

@@ -38,6 +38,8 @@ const buttonOpen = document.getElementById("pop-up-conversation");
 const buttonclosed = document.querySelector(".leave-pop-up");
 const logoAccueil = document.getElementById("logo-accueil");
 const logoConversation = document.getElementById("logo-conversation");
+const logoAccueil2 = document.getElementById("logo-accueil2");
+const logoConversation2 = document.getElementById("logo-conversation2");
 
 //même élement mais trois const
 const PageBoth = document.querySelector(".pop-up-inner");
@@ -57,6 +59,8 @@ buttonclosed.addEventListener("click", () => {
   buttonclosed.style.visibility = "hidden";
   buttonOpen.style.visibility = "visible";
   PageBoth.style.visibility = "hidden";
+  Pageleft.style.visibility = "hidden";
+  Pageright.style.visibility = "hidden";
 });
 
 logoConversation.addEventListener("click", () => {
@@ -65,6 +69,16 @@ logoConversation.addEventListener("click", () => {
 });
 
 logoAccueil.addEventListener("click", () => {
+  Pageright.style.visibility = "hidden";
+  Pageleft.style.visibility = "visible";
+});
+
+logoConversation2.addEventListener("click", () => {
+  Pageleft.style.visibility = "hidden";
+  Pageright.style.visibility = "visible";
+});
+
+logoAccueil2.addEventListener("click", () => {
   Pageright.style.visibility = "hidden";
   Pageleft.style.visibility = "visible";
 });
